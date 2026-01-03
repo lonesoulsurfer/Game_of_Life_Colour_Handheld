@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "GOL - Front panel")(type "KiCad")(uri "C:/Users/User/Documents/Electronic Projects/Ad Hoc Circuits/Game_of_Life_Raspberry_Pi/Front Panel/GOL - Front panel")(options "")(descr ""))
+)

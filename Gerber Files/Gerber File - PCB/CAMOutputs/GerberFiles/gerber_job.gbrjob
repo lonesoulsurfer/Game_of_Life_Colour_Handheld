@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2026-01-03T03:40:56Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Game of Life Pi"
+        },
+        "Owner": "marcus dunn <marcus.dunn74@hotmail.com>",
+        "Size": {
+            "X": 113.2842,
+            "Y": 53.33
+        }
+    }
+}
