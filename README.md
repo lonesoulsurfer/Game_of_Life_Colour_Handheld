@@ -1,6 +1,13 @@
 
+![UTUX1028](https://github.com/user-attachments/assets/28ee7e96-d396-44b6-94ed-0935351b37eb)
+
+
+![MCHT5886](https://github.com/user-attachments/assets/92890d19-b4a4-445a-8f03-1f27be04ff47)
+
+
 
 Conway's Game of Life - Complete User Guide
+Instructables - https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Version/
 
 
 Main Menu Navigation
