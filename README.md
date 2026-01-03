@@ -11,6 +11,11 @@ Main Menu Navigation
     B: Go back to previous menu
 
 
+Color Modes
+
+	All game modes support color! Press UP + DOWN together to toggle.
+
+
 During Gameplay
     UP: Increase speed (faster generations)
     
@@ -188,4 +193,4 @@ How It Works:
 
 Color Modes
 
-All game modes support color! Press UP + DOWN together to toggle.
+	All game modes support color! Press UP + DOWN together to toggle.
