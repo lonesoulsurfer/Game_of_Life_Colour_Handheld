@@ -5,10 +5,12 @@
 ![MCHT5886](https://github.com/user-attachments/assets/92890d19-b4a4-445a-8f03-1f27be04ff47)
 
 
+Instructables - https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Ve
+
+Youtube - https://youtu.be/rWrENXPgask
+
 
 Conway's Game of Life - Complete User Guide
-Instructables - https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Version/
-
 
 Main Menu Navigation
     UP/DOWN: Navigate menu options
