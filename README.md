@@ -105,9 +105,13 @@ ALT GAMES - Alternative Cellular Automata
 
 BRIAN'S BRAIN
 	Small: Compact symmetric cluster
+	
 	Medium: Larger symmetric pattern (35% density)
+	
 	Large: Very large sparse pattern (18% density)
+	
 	Random: Scattered center-weighted distribution
+	
 	Custom: Draw your own pattern
 
 
