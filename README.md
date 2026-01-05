@@ -67,6 +67,8 @@ Tools Menu Breakdown
 
 
 During Gameplay
+
+
     UP: Increase speed (faster generations)
     
     DOWN: Decrease speed (slower generations)
@@ -84,6 +86,7 @@ During Gameplay
     RESET Button (hold 2 seconds): Enter bootloader mode for updates
 
 
+
 Edit Mode (Custom games)
 
 	D-Pad: Move cursor
@@ -93,6 +96,7 @@ Edit Mode (Custom games)
 	B (2 second press): Start game
 	
 	B: Return to menu
+
 
 
 Main Menu Options
@@ -109,6 +113,7 @@ Main Menu Options
 	Glider - 56P6H1V0 spaceship pattern
 
 
+
 RANDOM - Chaotic Evolution
 
 	Unpredictable patterns emerge
@@ -118,6 +123,7 @@ RANDOM - Chaotic Evolution
 	May die out completely
 	
 	Game shows statistics when it stabilizes or dies
+
 
 
 SYMMETRIC -  Creates symmetric initial patterns with different sizes
@@ -135,6 +141,7 @@ SYMMETRIC -  Creates symmetric initial patterns with different sizes
 	Large (8px cells): 40x30 grid
 
 
+
 Step 2: Edit Mode
 
 	Red crosshair shows cursor position
@@ -146,6 +153,7 @@ Step 2: Edit Mode
 	Move with D-pad, toggle cells with B
 
 
+
 Step 3: Run
 
 	Hold B for 2 seconds to start
@@ -153,6 +161,7 @@ Step 3: Run
 	While running, hold B for 800ms to return to edit mode
 	
 	Press B to return to menu
+
 
 
 ALT GAMES - Alternative Cellular Automata
@@ -170,6 +179,7 @@ BRIAN'S BRAIN
 	Custom: Draw your own pattern
 
 
+
 DAY & NIGHT - Complementary rule B where birth/survival rules mirror each other.
 	
 	Very stable, creates intricate patterns
@@ -179,11 +189,13 @@ DAY & NIGHT - Complementary rule B where birth/survival rules mirror each other.
 	Often runs indefinitely
 
 
+
 SEEDS - "Exploding" automaton where cells live for exactly 1 generation.
 	
 	Random: Auto-generated 4-way symmetric pattern
 	
 	Custom: Draw your own (choose cell size first)
+
 
 
 CYCLIC CA - Multi-state cellular automaton where cells cycle through 6 states.
@@ -193,6 +205,7 @@ CYCLIC CA - Multi-state cellular automaton where cells cycle through 6 states.
 	4WayRot: 4-way rotational symmetry
 	
 	Random: Random pattern type and size
+
 
 
 RULE EXPLORER - Create Custom Rules
@@ -218,6 +231,8 @@ RULE EXPLORER - Create Custom Rules
 	Diamoeba (B35678/S5678) - Diamond-shaped amoebas
 
 
+
+
 Custom Rules - Create your own rules:
 
 	Navigation:
@@ -231,7 +246,8 @@ Custom Rules - Create your own rules:
 	B (2 seconds): Start game with custom rules
 	
 	B: Back to preset menu
-			
+
+		
 How It Works:
 
 	Birth row: Select how many neighbors cause birth (0-8)
@@ -239,6 +255,7 @@ How It Works:
 	Survival row: Select how many neighbors keep cell alive (0-8)
 	
 	Example: Conway's Life is B3 (birth on 3) / S23 (survive on 2 or 3)
+
 
 
 Color Modes
