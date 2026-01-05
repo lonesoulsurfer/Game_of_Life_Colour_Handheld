@@ -1,4 +1,4 @@
-
+	
 ![UTUX1028](https://github.com/user-attachments/assets/28ee7e96-d396-44b6-94ed-0935351b37eb)
 
 
@@ -23,6 +23,46 @@ Main Menu Navigation
 Color Modes
 
 	All game modes support color! Press UP + DOWN together to toggle.
+
+
+Tools
+
+
+Tools Menu Breakdown
+
+	Sound: ON/OFF - Toggles all game sounds on or off
+	
+	Volume: Low/Medium/High
+	
+	
+	World: Toroid/Open - Controls what happens at the edges of the game board
+		
+		Toroid = Wraparound edges (cells on the left edge are neighbors with cells on right edge, top wraps to bottom)
+	
+		Open = Hard edges (cells at the edge have fewer neighbors, no wraparound)
+	
+		Applies to ALL game modes (Conway's Life, Brian's Brain, Day & Night, Seeds, Cyclic CA)
+	
+		Default: Toroid (wraparound)
+
+	
+	Grid: ON/OFF - Shows/hides grid lines between cells
+	
+		Only visible when cell size is 3px or larger (not on Tiny 2px cells)
+	
+		Population: ON/OFF - Shows/hides the population counter overlay during gameplay
+
+
+	Gen: Current generation number
+	
+		Pop: Current number of living cells
+
+	
+	Trail Mode: ON/OFF - Shows fading trails behind cells as they die
+		
+		In Mono mode = Gray fading trail (white → light gray → dark gray → black over 12 frames)
+		
+		In Color mode = Colored fading trail using age-based colors
 
 
 During Gameplay
