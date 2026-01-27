@@ -5,6 +5,27 @@
 ![MCHT5886](https://github.com/user-attachments/assets/92890d19-b4a4-445a-8f03-1f27be04ff47)
 
 
+Version 2 now includes the following tools:
+
+	Sound: ON/OFF
+	
+	Volume: Low/Medium/High
+	
+	World: Toroid/Open
+	
+	Grid: ON/OFF
+	
+	Population: ON/OFF
+	
+	Trail Mode: ON/OFF
+
+
+
+I have also included another alternative game called 'larger than life'.  This game uses larger neighbourhoods instead of just the immediate 8 neighbours.  You can check out the neighbour sizes by holding down button B!
+
+	
+
+
 Instructables - https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Ve
 
 Youtube - https://youtu.be/rWrENXPgask
