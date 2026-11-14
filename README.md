@@ -1,284 +1,71 @@
-	
-![UTUX1028](https://github.com/user-attachments/assets/28ee7e96-d396-44b6-94ed-0935351b37eb)
+# Game of Life Colour Handheld
 
+This is a handheld Conway's Game of Life with a colour TFT screen. It uses an RP2040. It has colour and trail modes, a rule explorer, and 6 other cellular automata, including "Larger than Life".
 
-![MCHT5886](https://github.com/user-attachments/assets/92890d19-b4a4-445a-8f03-1f27be04ff47)
+![Game of Life Colour Handheld](https://github.com/user-attachments/assets/28ee7e96-d396-44b6-94ed-0935351b37eb)
 
+![Game of Life Colour Handheld screen](https://github.com/user-attachments/assets/92890d19-b4a4-445a-8f03-1f27be04ff47)
 
-Version 2 now includes the following tools:
+## Build guide and video
 
-	Sound: ON/OFF
-	
-	Volume: Low/Medium/High
-	
-	World: Toroid/Open
-	
-	Grid: ON/OFF
-	
-	Population: ON/OFF
-	
-	Trail Mode: ON/OFF
+- Step-by-step build guide on Instructables: [Conway's Game of Life Handheld - COLOURED Version](https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Ve/)
+- Video on YouTube: [Game of Life Colour Handheld](https://youtu.be/rWrENXPgask)
 
+## Features
 
+- Conway's Game of Life with preset, random, symmetric and custom patterns
+- 4 cell sizes, from 160 × 120 cells to 40 × 30 cells
+- Colour mode and trail mode
+- A rule explorer with 9 famous rule sets, and an editor for your own rules
+- Other automata: Brian's Brain, Day & Night, Seeds, Cyclic CA and Larger than Life
+- Tools: sound, volume, wrap-around or open edges, grid and population counter
 
-I have also included another alternative game called 'larger than life'.  This game uses larger neighbourhoods instead of just the immediate 8 neighbours.  You can check out the neighbour sizes by holding down button B!
+The [user guide](docs/MANUAL.md) tells you how to use all the menus and controls.
 
-	
+## What you need
 
+### Hardware
 
-Instructables - https://www.instructables.com/Conways-Game-of-Life-Handheld-COLOURED-Ve
+- Raspberry Pi Pico or Waveshare RP2040-Zero
+- ST7789 colour TFT display
+- All parts are in the [parts list](Parts%20List.pdf).
+- The schematic is [Schematic.png](Schematic.png).
+- The Gerber files are in [Gerber Files](Gerber%20Files/). You can send them to a PCB maker.
 
-Youtube - https://youtu.be/rWrENXPgask
+### Software
 
+- Arduino IDE 2
+- Board package: **Raspberry Pi Pico/RP2040** by Earle Philhower
+- Libraries (install them with the Library Manager): **Adafruit GFX Library** and **Adafruit ST7735 and ST7789 Library**
 
-Conway's Game of Life - Complete User Guide
+## Upload the firmware
 
-Main Menu Navigation
-    UP/DOWN: Navigate menu options
-    
-    B: Select menu item
-    
-    B: Go back to previous menu
+1. Download this repository. Click **Code → Download ZIP**, then extract the ZIP file.
+2. Install the software above.
+3. Open `Game_of_Life_Colour_V2/Game_of_Life_Colour_V2.ino`.
+4. Connect the RP2040 board to your computer with a USB cable.
+5. In the **Tools** menu, set **Board** to your board (**Raspberry Pi Pico** or **Waveshare RP2040 Zero**), and set **Port**.
+6. Click **Upload**.
 
+## Files in this repository
 
-Color Modes
+| Folder or file | Contents |
+|----------------|----------|
+| `Game_of_Life_Colour_V2/` | Firmware |
+| `Eagle PCB Files/` | Eagle files for the PCB |
+| `Front Panel Design Files/` | KiCad, SVG and DXF files for the front panel |
+| `Gerber Files/` | Gerber files, ready to order |
+| `Parts List.pdf` | Parts list |
+| `Schematic.png` | Schematic |
+| `docs/MANUAL.md` | User guide |
 
-	All game modes support color! Press UP + DOWN together to toggle.
+## Support
 
+Do you like this project? You can support my work on [GitHub Sponsors](https://github.com/sponsors/lonesoulsurfer).
 
-Tools
+## Licence
 
+- **Code:** [MIT License](LICENSE). You can use, change and sell it.
+- **Hardware** (PCB, panels and Gerber files): [CERN Open Hardware Licence v2, Strongly Reciprocal](LICENSE-HARDWARE). You can make, change and sell boards. If you share or sell a changed design, you must also share the changed design files under the same licence.
 
-Tools Menu Breakdown
-
-	Sound: ON/OFF - Toggles all game sounds on or off
-	
-	
-	Volume: Low/Medium/High
-	
-	
-	World: Toroid/Open - Controls what happens at the edges of the game board
-		
-		Toroid = Wraparound edges (cells on the left edge are neighbors with cells on right edge, top wraps to bottom)
-	
-		Open = Hard edges (cells at the edge have fewer neighbors, no wraparound)
-	
-		Applies to ALL game modes (Conway's Life, Brian's Brain, Day & Night, Seeds, Cyclic CA)
-	
-		Default: Toroid (wraparound)
-
-	
-	Grid: ON/OFF - Shows/hides grid lines between cells
-	
-		Only visible when cell size is 3px or larger (not on Tiny 2px cells)
-	
-		Population: ON/OFF - Shows/hides the population counter overlay during gameplay
-
-
-	Gen: Current generation number
-	
-		Pop: Current number of living cells
-
-	
-	Trail Mode: ON/OFF - Shows fading trails behind cells as they die
-		
-		In Mono mode = Gray fading trail (white → light gray → dark gray → black over 12 frames)
-		
-		In Color mode = Colored fading trail using age-based colors
-
-
-During Gameplay
-
-
-    UP: Increase speed (faster generations)
-    
-    DOWN: Decrease speed (slower generations)
-    
-    LEFT: Change cell size (Tiny → Small → Normal → Large)
-    
-    RIGHT: ReB/Regenerate current pattern
-    
-    UP + DOWN (together): Toggle COLOR/MONO mode
-    
-    B (short press): Return to menu
-    
-    B (2 second press): Show/hide game rules overlay
-
-    RESET Button (hold 2 seconds): Enter bootloader mode for updates
-
-
-
-Edit Mode (Custom games)
-
-	D-Pad: Move cursor
-	
-	B (short press): Toggle cell on/off
-	
-	B (2 second press): Start game
-	
-	B: Return to menu
-
-
-
-Main Menu Options
-	PRESET - Classic Patterns
-	
-	Coe Ship - Spaceship that travels across the board
-	
-	Gosper Glider Gun - Continuously spawns gliders
-	
-	Diamond - 4-8-12 diamond pattern that evolves
-	
-	Pulsar - Achim's p144 oscillator (period-144 pattern)
-	
-	Glider - 56P6H1V0 spaceship pattern
-
-
-
-RANDOM - Chaotic Evolution
-
-	Unpredictable patterns emerge
-	
-	May stabilize into oscillators
-	
-	May die out completely
-	
-	Game shows statistics when it stabilizes or dies
-
-
-
-SYMMETRIC -  Creates symmetric initial patterns with different sizes
-
-	CUSTOM - Draw Your Own
-	
-	Step 1: Choose Cell Size
-	
-	Tiny (2px cells): 160x120 grid
-	
-	Small (3px cells): 106x80 grid
-	
-	Normal (4px cells): 80x60 grid
-	
-	Large (8px cells): 40x30 grid
-
-
-
-Step 2: Edit Mode
-
-	Red crosshair shows cursor position
-	
-	Cursor blinks at 4Hz for visibility
-	
-	White cells = alive, Black = dead
-	
-	Move with D-pad, toggle cells with B
-
-
-
-Step 3: Run
-
-	Hold B for 2 seconds to start
-	
-	While running, hold B for 800ms to return to edit mode
-	
-	Press B to return to menu
-
-
-
-ALT GAMES - Alternative Cellular Automata
-
-
-BRIAN'S BRAIN
-	Small: Compact symmetric cluster
-	
-	Medium: Larger symmetric pattern (35% density)
-	
-	Large: Very large sparse pattern (18% density)
-	
-	Random: Scattered center-weighted distribution
-	
-	Custom: Draw your own pattern
-
-
-
-DAY & NIGHT - Complementary rule B where birth/survival rules mirror each other.
-	
-	Very stable, creates intricate patterns
-	
-	Day/Night metaphor in color mode
-	
-	Often runs indefinitely
-
-
-
-SEEDS - "Exploding" automaton where cells live for exactly 1 generation.
-	
-	Random: Auto-generated 4-way symmetric pattern
-	
-	Custom: Draw your own (choose cell size first)
-
-
-
-CYCLIC CA - Multi-state cellular automaton where cells cycle through 6 states.
-
-	VrtclSym: Vertical mirror symmetry
-	
-	4WayRot: 4-way rotational symmetry
-	
-	Random: Random pattern type and size
-
-
-
-RULE EXPLORER - Create Custom Rules
-
-	Choose from 9 famous rule variations:
-
-	Conway (B3/S23) - Classic Game of Life
-
-	HighLife (B36/S23) - Like Conway, with replicators
-
-	Maze (B3/S12345) - Creates maze-like patterns
-
-	Coral (B3/S45678) - Grows coral-like structures
-
-	Seeds (B2/S) - Exploding patterns (same as Seeds mode)
-
-	Replicator (B1357/S1357) - Self-replicating patterns
-
-	2x2 (B36/S125) - Stable 2x2 blocks common
-
-	NoDeath (B3/S012345678) - Cells never die once born
-
-	Diamoeba (B35678/S5678) - Diamond-shaped amoebas
-
-
-
-
-Custom Rules - Create your own rules:
-
-	Navigation:
-	
-	UP/DOWN: Switch between Birth and Survival rows
-	
-	LEFT/RIGHT: Move cursor (0-8 neighbors)
-	
-	B (short): Toggle number on/off
-	
-	B (2 seconds): Start game with custom rules
-	
-	B: Back to preset menu
-
-		
-How It Works:
-
-	Birth row: Select how many neighbors cause birth (0-8)
-	
-	Survival row: Select how many neighbors keep cell alive (0-8)
-	
-	Example: Conway's Life is B3 (birth on 3) / S23 (survive on 2 or 3)
-
-
-
-Color Modes
-
-	All game modes support color! Press UP + DOWN together to toggle.
+Copyright (c) 2026 Marcus (lonesoulsurfer).
